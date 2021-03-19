@@ -47,6 +47,22 @@
       "checked": true,
       "birthday": null,
       "id": 6
+    },
+    {
+      "name": "Daniel",
+      "lastname": "Roberto",
+      "email": "Drindaro@gmail.com",
+      "checked": true,
+      "birthday": "18 Mar 2021",
+      "id": 7
+    },
+    {
+      "name": "E",
+      "lastname": "E",
+      "email": "E@e.com",
+      "checked": true,
+      "birthday": "18 Mar 2021",
+      "id": 8
     }
   ],
   "books": [
