@@ -48,7 +48,7 @@ const Login = () => {
             </View>
         </View>
         <View style={{justifyContent:'center',alignItems:'center'}}>
-        <Image source={require('../assets/General/ic_group.png')} style={{height:80,width:80}} resizeMethod="resize" />
+        <Image source={require('../assets/General/ic_group.png')} style={{height:120,width:120}} resizeMethod="resize" resizeMode="contain"/>
         </View>
         </Animated.View>
         </ScrollView>

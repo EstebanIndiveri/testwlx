@@ -7,7 +7,6 @@ const Notificactions = () => {
     return ( 
         <Fragment>
         <SafeAreaView style={styles.container}>
-        <Header/>
         <View style={styles.containerTitle}>
             <Text style={styles.titleView}>Notifications</Text>
         </View>

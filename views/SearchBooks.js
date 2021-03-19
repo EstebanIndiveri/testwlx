@@ -83,8 +83,8 @@ const styles=StyleSheet.create({
     searchBar: {
         fontSize: 21,
         margin: 40,
-        width: '80%',
-        marginTop:38,
+        width: '90%',
+        marginTop:35,
         height: 40,
         borderRadius:15,
         padding:5,

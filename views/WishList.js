@@ -75,7 +75,8 @@ const styles=StyleSheet.create({
     },
     TextTitle:{
         fontSize:30,
-        color:THEME_COLOR.BLACK,
+        // color:THEME_COLOR.BLACK,
+        color:THEME_COLOR.WHITE,
         textAlign:'center',
         fontFamily:'Montserrat-SemiBold'
     },

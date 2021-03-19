@@ -1,13 +1,15 @@
-import React from 'react';
-import { useState } from 'react';
+import React,{useState} from 'react';
 import { StyleSheet, View, Dimensions } from 'react-native';
 import Tab from './Tab';
 
 const {width}=Dimensions.get('screen');
 
+
 const TabBar = ({state,navigation}) => {
     const [selected,setSelected]=useState('Home');
+    const [large,setLarge]=useState('');
     const{routes}=state;
+    
 
     // console.log(props)
     // console.log(state.routes)

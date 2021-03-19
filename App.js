@@ -15,21 +15,16 @@ enableScreens();
 const App=() => {
   return (
     <Fragment>
-      {/* <ErrorBoundary> */}
+      <ErrorBoundary>
         <Provider store={store}>
           <PersistGate loading={null} persistor={persistore}>
         <StatusBar backgroundColor="transparent" translucent barStyle="dark-content"/>
-
-        {/* <StatusBar backgroundColor="transparent" barStyle="dark-content"/> */}
-
         <NavigationContainer>
           <AuthNavigation/>
-          {/* <TabNavigator/> */}
         </NavigationContainer>
-        {/* <MainNavigation/> */}
         </PersistGate>
         </Provider>
-      {/* </ErrorBoundary> */}
+      </ErrorBoundary>
     </Fragment>
   );
 };

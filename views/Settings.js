@@ -131,7 +131,7 @@ const styleAnimated={
         <Animated.View style={styles.container,{opacity:animation}}>
             {isLoading&&<Loader/>}
             <View style={styles.profileContainer} >
-                <Image source={require('../assets/General/img_user2.png')} style={{height:135,width:135}}/>
+                <Image source={require('../assets/General/img_user1.png')} style={{height:90,width:90}} resizeMethod="resize" resizeMode="contain"/>
                 <Text style={styles.text}>{name} {lastname}</Text>
             </View>
             <View style={{marginTop:20,width}}>
@@ -235,7 +235,7 @@ const styles=StyleSheet.create({
       },
       modalView: {
         margin: 20,
-        color:THEME_COLOR.WHITE,
+        backgroundColor:THEME_COLOR.WHITE,
         borderRadius: 20,
         padding: 35,
         alignItems: "center",

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
-import { StyleSheet, TextInput, TouchableOpacity, View,Text,Button,Alert} from 'react-native';
+import { StyleSheet, TextInput, TouchableOpacity, View,Text,Button,Alert,Image} from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { useDispatch, useSelector } from 'react-redux';
@@ -126,15 +126,18 @@ const FormLogin = () => {
             onChange={()=>setPass(false)}
             textContentType="emailAddress"
             value={email}
-            placeholder="Your Email"
+            placeholder="Your Email: example@gmail.com"
             keyboardType="email-address"
             />
          <TouchableOpacity onPressIn={showDatepicker}>
              <View style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
                 <Text style={{textAlign:'center',color:'cornflowerblue',fontSize:18,fontFamily:'Merriweather-Regular',padding:10,marginTop:20,borderColor:'#e1e1e1',backgroundColor:'#FFF',borderRadius:10,width:'90%'}}>
                 Select your birthday 
+                
                 </Text>
+                <Image source={require('../assets/General/schedule.png')} style={{height:50,width:50}} resizeMethod="resize" resizeMode="contain"/>
              </View>
+             
         </TouchableOpacity>
         <View>
         </View>
@@ -148,12 +151,7 @@ const FormLogin = () => {
           onChange={onChange}
         />
         )}
-          {
-            birthday&&
-            <View style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-              <Text style={{textAlign:'center',fontSize:20}}>{birthday}</Text>
-            </View>
-          }
+        
       <View style={{justifyContent:'center',alignItems:'center',marginTop:30}}>
         <BouncyCheckbox
           //   isChecked
